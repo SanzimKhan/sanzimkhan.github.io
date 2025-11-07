@@ -1,39 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>News | Sanzim Khan</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>News | MD Sanzim Rahman Khan</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header class="navbar">
-    <img src="images/botengineers.png" class="logo">
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="achievements.html">Achievements</a></li>
-        <li><a href="news.html" class="active">News</a></li>
-        <li><a href="podcast.html">Podcast</a></li>
-        <li><a href="gigs.html">Gigs</a></li>
-      </ul>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/img/botengineers_logo.png" alt="BOT Engineers" class="logo-img">
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="gallery.html" class="nav__link">Gallery</a></li>
+          <li class="nav__item"><a href="achievements.html" class="nav__link">Achievements</a></li>
+          <li class="nav__item"><a href="news.html" class="nav__link active-link">News</a></li>
+          <li class="nav__item"><a href="podcast.html" class="nav__link">Podcast</a></li>
+          <li class="nav__item"><a href="gigs.html" class="nav__link">Gigs</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__btns">
+        <a href="assets/cv/MD_Sanzim_Rahman_Khan_CV.pdf" class="button" download>Download CV</a>
+      </div>
     </nav>
   </header>
 
-  <section class="news fade-in">
-    <h1>News & Updates</h1>
-    <article>
-      <h2>BOT Engineers Launches Robotics Kits for Kids</h2>
-      <p>Empowering young learners with hands-on science and robotics tools to explore innovation.</p>
-    </article>
-    <article>
-      <h2>BRACU Mongol Tori Achieves Top Global Ranking</h2>
-      <p>Ranked 2nd in Asia at URC 2024, strengthening Bangladesh’s presence in robotics research.</p>
-    </article>
-  </section>
+  <main class="main">
+    <section class="section news-section container">
+      <h2 class="section__title">News & Updates</h2>
+      <span class="section__subtitle">Latest from BOT Engineers</span>
+
+      <div class="news-list">
+        <article class="news-item">
+          <img src="assets/img/project1.jpg" alt="Kits launch" />
+          <div>
+            <h3>BOT Engineers launches Kits for Kids</h3>
+            <p>Hands-on robotics kits released to local schools — curriculum and online tutorials included.</p>
+            <small>Oct 2025</small>
+          </div>
+        </article>
+
+        <article class="news-item">
+          <img src="assets/img/urc.jpg" alt="URC result" />
+          <div>
+            <h3>URC 2024 Recap: lessons learned</h3>
+            <p>Detailed technical blog on navigation stack improvements and mission strategy.</p>
+            <small>July 2024</small>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
-    <p>© 2025 MD Sanzim Rahman Khan | BOT Engineers</p>
+    <div class="footer__container container">
+      <div>
+        <h3 class="footer__title">MD Sanzim Rahman Khan</h3>
+        <span class="footer__subtitle">Founder & Robotics Engineer</span>
+      </div>
+      <p class="footer__copy">© 2025 BOT Engineers</p>
+    </div>
   </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

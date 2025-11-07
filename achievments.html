@@ -1,38 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Achievements | Sanzim Khan</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Achievements | MD Sanzim Rahman Khan</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header class="navbar">
-    <img src="images/botengineers.png" class="logo">
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="achievements.html" class="active">Achievements</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="podcast.html">Podcast</a></li>
-        <li><a href="gigs.html">Gigs</a></li>
-      </ul>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/img/botengineers_logo.png" alt="BOT Engineers" class="logo-img">
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="gallery.html" class="nav__link">Gallery</a></li>
+          <li class="nav__item"><a href="achievements.html" class="nav__link active-link">Achievements</a></li>
+          <li class="nav__item"><a href="news.html" class="nav__link">News</a></li>
+          <li class="nav__item"><a href="podcast.html" class="nav__link">Podcast</a></li>
+          <li class="nav__item"><a href="gigs.html" class="nav__link">Gigs</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__btns">
+        <a href="assets/cv/MD_Sanzim_Rahman_Khan_CV.pdf" class="button" download>Download CV</a>
+      </div>
     </nav>
   </header>
 
-  <section class="achievements fade-in">
-    <h1>Achievements</h1>
-    <ul>
-      <li>🏅 URC 2024 Finalist – Ranked 2nd in Asia</li>
-      <li>🏅 IRC 2023 Winner – 1st in Bangladesh</li>
-      <li>🚀 Founder of BOT Engineers – Robotics & EdTech Startup</li>
-      <li>🤖 Led BRACU Mongol Tori – International Rover Challenge</li>
-      <li>🎓 Mentored young engineers through Kits for Kids Program</li>
-    </ul>
-  </section>
+  <main class="main">
+    <section class="section achievements-section container">
+      <h2 class="section__title">Achievements</h2>
+      <span class="section__subtitle">Competitions, Awards & Impact</span>
+
+      <div class="achievements-grid">
+        <article class="achieve-card">
+          <h3>URC 2024 — Finalist</h3>
+          <p>Ranked 2nd in Asia at University Rover Challenge 2024 — system integration & mission scoring lead.</p>
+          <small>June 2024</small>
+        </article>
+
+        <article class="achieve-card">
+          <h3>IRC 2023 — National Winner</h3>
+          <p>Top team from Bangladesh in International Rover Challenge 2023 — design and testing leadership.</p>
+          <small>January 2023</small>
+        </article>
+
+        <article class="achieve-card">
+          <h3>BOT Engineers — Founded</h3>
+          <p>Built a startup focusing on robotics kits, EdTech outreach, and robotics services.</p>
+          <small>2024 — present</small>
+        </article>
+
+        <article class="achieve-card">
+          <h3>Kits for Kids Program</h3>
+          <p>Launched educational kits for ages 12+ to teach STEM fundamentals through hands-on builds.</p>
+          <small>2025</small>
+        </article>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
-    <p>© 2025 MD Sanzim Rahman Khan | BOT Engineers</p>
+    <div class="footer__container container">
+      <div>
+        <h3 class="footer__title">MD Sanzim Rahman Khan</h3>
+        <span class="footer__subtitle">Founder & Robotics Engineer</span>
+      </div>
+      <p class="footer__copy">© 2025 BOT Engineers</p>
+    </div>
   </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

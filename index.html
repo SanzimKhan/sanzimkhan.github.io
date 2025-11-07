@@ -1,38 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>MD Sanzim Rahman Khan | Portfolio</title>
-  <link rel="shortcut icon" href="images/Icon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!--==================== ICONS ====================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+  <!--==================== GOOGLE FONTS ====================-->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!--==================== SWIPER CSS ====================-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>MD Sanzim Rahman Khan | Portfolio</title>
+</head>
 <body>
-  <!-- NAVIGATION -->
-  <header class="navbar">
-    <img src="images/botengineers.png" alt="Logo" class="logo">
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="achievements.html">Achievements</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="podcast.html">Podcast</a></li>
-        <li><a href="gigs.html">Gigs</a></li>
-      </ul>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">Sanzim</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__item"><a href="#home" class="nav__link active-link"><i class="uil uil-estate nav__icon"></i>Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link"><i class="uil uil-user nav__icon"></i>About</a></li>
+          <li class="nav__item"><a href="#portfolio" class="nav__link"><i class="uil uil-scenery nav__icon"></i>Portfolio</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link"><i class="uil uil-message nav__icon"></i>Contact</a></li>
+          <li class="nav__item dropdown">
+            <a href="#" class="nav__link"><i class="uil uil-apps nav__icon"></i>More ▾</a>
+            <ul class="dropdown__menu">
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="achievements.html">Achievements</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="podcast.html">Podcast</a></li>
+              <li><a href="gigs.html">Gigs</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__btns">
+        <a href="assets/cv/MD_Sanzim_Rahman_Khan_CV.pdf" class="button button--small" download>Download CV</a>
+      </div>
     </nav>
   </header>
 
-  <section class="hero fade-in">
-    <img src="images/man.png" alt="Sanzim Khan" class="hero-img bounce">
-    <h1 class="glow">MD Sanzim Rahman Khan</h1>
-    <p>Founder & CEO of BOT Engineers</p>
-    <p>Robotics & AI Researcher | BRAC University</p>
-  </section>
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__content grid">
+          <div class="home__social">
+            <a href="https://www.linkedin.com/" target="_blank" class="home__social-icon"><i class="uil uil-linkedin"></i></a>
+            <a href="https://github.com/" target="_blank" class="home__social-icon"><i class="uil uil-github"></i></a>
+            <a href="https://dribbble.com/" target="_blank" class="home__social-icon"><i class="uil uil-dribbble"></i></a>
+          </div>
 
+          <div class="home__img">
+            <img src="assets/img/sanzim.png" alt="Sanzim photo" class="home__blob-img" />
+          </div>
+
+          <div class="home__data">
+            <h1 class="home__title">MD Sanzim Rahman Khan</h1>
+            <h3 class="home__subtitle">Robotics & Software Engineer | Founder of BOT Engineers</h3>
+            <p class="home__description">Innovating through robotics, software, and education. Passionate about building technology that inspires creativity and learning.</p>
+            <a href="#contact" class="button button--flex">
+              Contact Me <i class="uil uil-message button__icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+      <h2 class="section__title">About Me</h2>
+      <span class="section__subtitle">Who I Am</span>
+
+      <div class="about__container container grid">
+        <img src="assets/img/about.jpg" alt="" class="about__img" />
+
+        <div class="about__data">
+          <p class="about__description">
+            I’m a Robotics Engineer, Founder and CEO of BOT Engineers, and former Team Lead of BRACU Mongol Tori (URC 2024 Finalist).  
+            Experienced in robotics design, system integration, and educational robotics innovation.
+          </p>
+
+          <div class="about__info">
+            <div><span class="about__info-title">4+</span><span class="about__info-name">Years<br>Experience</span></div>
+            <div><span class="about__info-title">25+</span><span class="about__info-name">Projects<br>Completed</span></div>
+            <div><span class="about__info-title">3+</span><span class="about__info-name">Competitions<br>Finals</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== PORTFOLIO ====================-->
+    <section class="portfolio section" id="portfolio">
+      <h2 class="section__title">Featured Projects</h2>
+      <span class="section__subtitle">Recent Work</span>
+
+      <div class="portfolio__container container swiper">
+        <div class="swiper-wrapper">
+          <!-- Example project -->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/img/project1.jpg" alt="" class="portfolio__img">
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Robotics Kit for Kids</h3>
+              <p class="portfolio__description">A DIY kit to introduce children (12+) to robotics and STEM concepts through hands-on projects.</p>
+              <a href="#" class="button button--flex button--small portfolio__button">Demo<i class="uil uil-arrow-right button__icon"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Swiper buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!--==================== CONTACT ====================-->
+    <section class="contact section" id="contact">
+      <h2 class="section__title">Contact Me</h2>
+      <span class="section__subtitle">Get in Touch</span>
+
+      <div class="contact__container container grid">
+        <div>
+          <div class="contact__information">
+            <i class="uil uil-envelope contact__icon"></i>
+            <div><h3>Email Me</h3><span>sanzimrahmankhan@gmail.com</span></div>
+          </div>
+          <div class="contact__information">
+            <i class="uil uil-location-point contact__icon"></i>
+            <div><h3>Location</h3><span>Dhaka, Bangladesh</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--==================== FOOTER ====================-->
   <footer class="footer">
-    <p>© 2025 MD Sanzim Rahman Khan | BOT Engineers</p>
-  </footer>
-</body>
-</html>
+    <div class="footer__bg">
+      <div class="footer__container container grid"

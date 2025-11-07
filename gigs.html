@@ -1,41 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Gigs | Sanzim Khan</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gigs & Talks | MD Sanzim Rahman Khan</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header class="navbar">
-    <img src="images/botengineers.png" class="logo">
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="achievements.html">Achievements</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="podcast.html">Podcast</a></li>
-        <li><a href="gigs.html" class="active">Gigs</a></li>
-      </ul>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/img/botengineers_logo.png" alt="BOT Engineers" class="logo-img">
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="gallery.html" class="nav__link">Gallery</a></li>
+          <li class="nav__item"><a href="achievements.html" class="nav__link">Achievements</a></li>
+          <li class="nav__item"><a href="news.html" class="nav__link">News</a></li>
+          <li class="nav__item"><a href="podcast.html" class="nav__link">Podcast</a></li>
+          <li class="nav__item"><a href="gigs.html" class="nav__link active-link">Gigs</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__btns">
+        <a href="assets/cv/MD_Sanzim_Rahman_Khan_CV.pdf" class="button" download>Download CV</a>
+      </div>
     </nav>
   </header>
 
-  <section class="gigs fade-in">
-    <h1>Upcoming Gigs & Talks</h1>
-    <div class="gig-card">
-      <img src="images/event.jpg" alt="Event">
-      <h2>TechTalk: Robotics for the Future</h2>
-      <p>Speaker – BRAC University Auditorium, Jan 2026</p>
-    </div>
-    <div class="gig-card">
-      <img src="images/project1.jpg" alt="Workshop">
-      <h2>DIY Robotics Workshop</h2>
-      <p>Organized by BOT Engineers | Dhaka Maker Fest</p>
-    </div>
-  </section>
+  <main class="main">
+    <section class="section gigs-section container">
+      <h2 class="section__title">Gigs & Talks</h2>
+      <span class="section__subtitle">Workshops, Talks & Bookings</span>
+
+      <div class="gigs-grid">
+        <div class="gig-card">
+          <img src="assets/img/event.jpg" alt="Tech Talk">
+          <h3>TechTalk: Robotics for the Future</h3>
+          <p>BRAC University — Speaker session on vehicle autonomy & team organization.</p>
+          <small>Jan 2026</small>
+          <a href="mailto:contact@botengineers.com?subject=Booking%20Sanzim" class="button button--small">Book</a>
+        </div>
+
+        <div class="gig-card">
+          <img src="assets/img/project1.jpg" alt="Workshop">
+          <h3>DIY Robotics Workshop</h3>
+          <p>Interactive workshop for students — LFR builds and sensors session.</p>
+          <small>Ongoing</small>
+          <a href="mailto:contact@botengineers.com?subject=Workshop%20Inquiry" class="button button--small">Enquire</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
-    <p>© 2025 MD Sanzim Rahman Khan | BOT Engineers</p>
+    <div class="footer__container container">
+      <div>
+        <h3 class="footer__title">MD Sanzim Rahman Khan</h3>
+        <span class="footer__subtitle">Founder & Robotics Engineer</span>
+      </div>
+      <p class="footer__copy">© 2025 BOT Engineers</p>
+    </div>
   </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
